@@ -1,11 +1,125 @@
-body{
-  height: 4000px;
+/* common */
+$main-color : #ff8b38;
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
 }
 
+*{
+  outline: none;
+}
+body{
+  height: 4000px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.upper{
+  text-transform: uppercase;
+}
+
+/* Nav bar */
 .navbar{
   border-radius: 0;
+  color: white;
+  font-weight: 500;
 }
 .scrolled{
   background-color: rgba(0,0,0, .5);
   border: 0;
+}
+
+/* Header | Hero */
+header{
+  background: url("../images/headerbg.jpg") no-repeat top center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .52);
+  }
+  
+  .center-vh{
+    margin-top: 25vh;
+  }
+  
+  h1{
+    font-weight: bold;
+    font-size: 60px;
+    
+    span{
+      font-weight: normal;
+      color: $main-color;
+    }
+  }
+  
+  .lead{
+    font-size: 30px;
+    
+    &:after{
+      content: '';
+      display: block;
+      width: 75px;
+      height: 2px;
+      background-color: #fff;
+      margin: 25px 0;
+    }
+  }
+  
+  .norm{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+  }
+  
+  button{
+    background: transparent;
+    padding: 5px 15px;
+    border: 2px solid #fff;
+    margin-top: 20px;
+  }
+  
+  form{
+    width: 360px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    h2{
+      background-color: #f5f5f5;
+      font-size: 18px;
+      font-weight: 800;
+      margin-top: 0;
+      padding: 10px;
+      color: #555;
+      
+      span{
+        color: $main-color;
+      }
+    }
+    
+    .form-control{
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      border-bottom: 1px solid #ccc;
+      width: 75%;
+      margin: 20px auto 35px;
+    }
+    
+    .btn{
+      padding: 15px;
+      background-color: $main-color;
+      border-radius: 0;
+      font-size: 'Raleway', sans-serif;
+    }
+  }
 }
