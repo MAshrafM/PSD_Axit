@@ -1,5 +1,6 @@
 'use strict';
 $(function (){
+  // Scroll
   $(window).scroll(function(){
     let navbar = $(".navbar");
     if($(window).scrollTop() >= navbar.height()){
@@ -12,5 +13,12 @@ $(function (){
         navbar.removeClass("scrolled");
       }
     }
+  });
+  // Tabs
+  $(".tab-switch li").click(function(){
+    $(this).addClass("selected").siblings().removeClass("selected");
+    $("#tabs .tabs-content > div").hide();
+    let dclass = $(this).data("class");
+    $("." + dclass).show();
   });
 });

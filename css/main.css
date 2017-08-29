@@ -13,6 +13,13 @@ body {
 .upper {
   text-transform: uppercase; }
 
+.btn-main {
+  background-color: #ff8b38;
+  border-radius: 0;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif; }
+
 /* Nav bar */
 .navbar {
   border-radius: 0;
@@ -120,3 +127,35 @@ header {
     color: #eb4924; }
   #social-media .fa-rss:hover {
     color: #f26522; }
+
+/* Tabs Section */
+#tabs {
+  padding: 100px 0;
+  background-color: #f5f5f5; }
+  #tabs .tab-switch li {
+    background-color: #333;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    height: 110px;
+    line-height: 110px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer; }
+    #tabs .tab-switch li:hover {
+      background-color: #ff8b38; }
+  #tabs .tab-switch .selected {
+    background-color: #ff8b38; }
+  #tabs .tabs-content {
+    margin-left: 20px; }
+    #tabs .tabs-content h3 {
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: -1px; }
+    #tabs .tabs-content p {
+      margin-top: 20px;
+      line-height: 1.6;
+      font-size: 18px;
+      color: #777; }
+    #tabs .tabs-content div:not(.tab-1) {
+      display: none; }
