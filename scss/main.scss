@@ -246,7 +246,7 @@ header{
   }
 }
 
-#sublist{
+#sublist, #sublist-sec{
   padding: 100px 0;
   
   .sub-image{
@@ -296,5 +296,22 @@ header{
       }
     }
     
+  }
+}
+
+#sublist-sec{
+  background-color: #f5f5f5;
+  
+  .sub-image{
+    margin-top: 0;
+  }
+  
+  .list-info{
+    margin-top: 50px;
+  }
+  
+  p{
+    letter-spacing: 1.3px;
+    line-height: 1.7;
   }
 }

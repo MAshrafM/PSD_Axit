@@ -160,34 +160,44 @@ header {
     #tabs .tabs-content div:not(.tab-1) {
       display: none; }
 
-#sublist {
+#sublist, #sublist-sec {
   padding: 100px 0; }
-  #sublist .sub-image {
+  #sublist .sub-image, #sublist-sec .sub-image {
     margin-top: 50px; }
-  #sublist .list-info h3 {
+  #sublist .list-info h3, #sublist-sec .list-info h3 {
     font-family: "Open Sans", sans-serif;
     font-weight: 800; }
-    #sublist .list-info h3:after {
+    #sublist .list-info h3:after, #sublist-sec .list-info h3:after {
       content: '';
       display: block;
       width: 75px;
       height: 2px;
       background-color: #ff8b38;
       margin: 25px 0; }
-  #sublist .list-info p {
+  #sublist .list-info p, #sublist-sec .list-info p {
     font-family: "Raleway", sans-serif; }
-  #sublist .list-info .sub-lead {
+  #sublist .list-info .sub-lead, #sublist-sec .list-info .sub-lead {
     margin-bottom: 35px; }
-  #sublist .list-info .media .media-left {
+  #sublist .list-info .media .media-left, #sublist-sec .list-info .media .media-left {
     width: 15%; }
-    #sublist .list-info .media .media-left img {
+    #sublist .list-info .media .media-left img, #sublist-sec .list-info .media .media-left img {
       margin: auto;
       padding: 15px;
       border: 3px solid #ff8b38;
       border-radius: 50%; }
-  #sublist .list-info .media .media-body h4 {
+  #sublist .list-info .media .media-body h4, #sublist-sec .list-info .media .media-body h4 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     margin-bottom: 10px; }
-  #sublist .list-info .media .media-body p {
+  #sublist .list-info .media .media-body p, #sublist-sec .list-info .media .media-body p {
     font-style: italic; }
+
+#sublist-sec {
+  background-color: #f5f5f5; }
+  #sublist-sec .sub-image {
+    margin-top: 0; }
+  #sublist-sec .list-info {
+    margin-top: 50px; }
+  #sublist-sec p {
+    letter-spacing: 1.3px;
+    line-height: 1.7; }
