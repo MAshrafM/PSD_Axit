@@ -245,3 +245,56 @@ header{
     }
   }
 }
+
+#sublist{
+  padding: 100px 0;
+  
+  .sub-image{
+    margin-top: 50px;
+  }
+  .list-info{
+    h3{
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      
+      &:after{
+        content: '';
+        display: block;
+        width: 75px;
+        height: 2px;
+        background-color: $main-color;
+        margin: 25px 0;
+      }
+    }
+    p{
+      font-family: "Raleway", sans-serif;
+    }
+    .sub-lead{
+      margin-bottom: 35px;
+    }
+    
+    .media{
+      .media-left{
+        width: 15%;
+        
+        img{
+          margin: auto;
+          padding: 15px;
+          border: 3px solid $main-color;
+          border-radius: 50%;
+        }
+      }
+      .media-body{
+        h4{
+          font-family: "Open Sans", sans-serif;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        p{
+          font-style: italic;
+        }
+      }
+    }
+    
+  }
+}

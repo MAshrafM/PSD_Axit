@@ -159,3 +159,35 @@ header {
       color: #777; }
     #tabs .tabs-content div:not(.tab-1) {
       display: none; }
+
+#sublist {
+  padding: 100px 0; }
+  #sublist .sub-image {
+    margin-top: 50px; }
+  #sublist .list-info h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800; }
+    #sublist .list-info h3:after {
+      content: '';
+      display: block;
+      width: 75px;
+      height: 2px;
+      background-color: #ff8b38;
+      margin: 25px 0; }
+  #sublist .list-info p {
+    font-family: "Raleway", sans-serif; }
+  #sublist .list-info .sub-lead {
+    margin-bottom: 35px; }
+  #sublist .list-info .media .media-left {
+    width: 15%; }
+    #sublist .list-info .media .media-left img {
+      margin: auto;
+      padding: 15px;
+      border: 3px solid #ff8b38;
+      border-radius: 50%; }
+  #sublist .list-info .media .media-body h4 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  #sublist .list-info .media .media-body p {
+    font-style: italic; }
