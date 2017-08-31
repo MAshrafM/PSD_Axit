@@ -160,6 +160,7 @@ header {
     #tabs .tabs-content div:not(.tab-1) {
       display: none; }
 
+/* Sub list Section */
 #sublist, #sublist-sec {
   padding: 100px 0; }
   #sublist .sub-image, #sublist-sec .sub-image {
@@ -179,12 +180,21 @@ header {
   #sublist .list-info .sub-lead, #sublist-sec .list-info .sub-lead {
     margin-bottom: 35px; }
   #sublist .list-info .media .media-left, #sublist-sec .list-info .media .media-left {
-    width: 15%; }
-    #sublist .list-info .media .media-left img, #sublist-sec .list-info .media .media-left img {
-      margin: auto;
-      padding: 15px;
-      border: 3px solid #ff8b38;
-      border-radius: 50%; }
+    width: 20%;
+    text-align: center; }
+    #sublist .list-info .media .media-left i, #sublist-sec .list-info .media .media-left i {
+      color: #ff8b38;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 35px;
+      border: 2px solid #ff8b38;
+      border-radius: 50%;
+      text-align: center;
+      transition: all .5s ease-in-out; }
+      #sublist .list-info .media .media-left i:hover, #sublist-sec .list-info .media .media-left i:hover {
+        background-color: #ff8b38;
+        color: #fff; }
   #sublist .list-info .media .media-body h4, #sublist-sec .list-info .media .media-body h4 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
@@ -192,6 +202,7 @@ header {
   #sublist .list-info .media .media-body p, #sublist-sec .list-info .media .media-body p {
     font-style: italic; }
 
+/* Secondary Sub list */
 #sublist-sec {
   background-color: #f5f5f5; }
   #sublist-sec .sub-image {
@@ -201,3 +212,47 @@ header {
   #sublist-sec p {
     letter-spacing: 1.3px;
     line-height: 1.7; }
+
+/* Ad Section */
+#ad {
+  padding: 50px 0; }
+  #ad h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 50px; }
+    #ad h2:after {
+      content: '';
+      display: block;
+      width: 75px;
+      height: 2px;
+      background-color: #ff8b38;
+      margin: 25px auto; }
+  #ad .lead {
+    font-size: 14px;
+    color: #a9aaac;
+    margin-bottom: 75px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.3px;
+    font-style: italic; }
+  #ad .icon {
+    text-align: center; }
+    #ad .icon i {
+      color: #ff8b38;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 35px;
+      border: 2px solid #ff8b38;
+      border-radius: 50%;
+      text-align: center;
+      transition: all .5s ease-in-out; }
+      #ad .icon i:hover {
+        background-color: #ff8b38;
+        color: #fff; }
+  #ad h3 {
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600; }
+  #ad p {
+    color: #a9aaac;
+    font-family: "Raleway", sans-serif; }
