@@ -12,7 +12,7 @@ $main-color : #ff8b38;
   outline: none;
 }
 body{
-  height: 4000px;
+  min-height: 4000px;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -461,4 +461,72 @@ header{
     margin-top: -35px;
   }
 }
-
+/* Testimonials */
+#testimonials{
+  padding: 75px 0;
+  h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    &:after{
+      content: '';
+      display: block;
+      width: 75px;
+      height: 2px;
+      background-color: $main-color;
+      margin: 25px auto;
+    }
+  }
+  
+  .lead{
+    font-size: 14px;
+    color: #a9aaac;
+    margin-bottom: 75px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.3px;
+    font-style: italic;
+    
+  }
+  
+  .testmonial{
+    width: 90%;
+    padding: 25px 15px;
+    background-color: #f5f5f5;
+    color: #8e8f93;
+    border-radius: 5px;
+    position: relative;
+    &:after{
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 15px 15px 15px 15px;
+      border-color: #f5f5f5 transparent transparent transparent;
+      position: absolute;
+      bottom: -30px;
+      left: 35px;
+    }
+  }
+  
+  .media{
+    margin-top: 30px;
+    .media-left{
+      img{
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .media-body{
+      h4{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        margin-top: 25px;
+      }
+      p{
+        font-weight: 600;
+        color: #a9aaac;
+      }
+    }
+  }
+}
