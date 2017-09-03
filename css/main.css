@@ -367,3 +367,42 @@ header {
     #testimonials .media .media-body p {
       font-weight: 600;
       color: #a9aaac; }
+
+/* Stylish */
+#stylish {
+  background: url("../images/stylishbg.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 320px;
+  position: relative;
+  color: #fff; }
+  #stylish .overlay {
+    padding: 50px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); }
+  #stylish h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 42px; }
+    #stylish h2:after {
+      content: '';
+      display: block;
+      width: 75px;
+      height: 2px;
+      background-color: #fff;
+      margin: 25px auto; }
+  #stylish .lead {
+    font-size: 14px;
+    margin-bottom: 50px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.3px;
+    font-style: italic; }
+  #stylish .btn-stylish {
+    margin: 5px auto;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background-color: transparent; }
