@@ -20,11 +20,31 @@ body {
   font-weight: 400;
   font-family: "Raleway", sans-serif; }
 
+.top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  cursor: pointer; }
+  .top i {
+    width: 50px;
+    height: 50px;
+    color: #ff8b38;
+    border: 3px solid #ff8b38;
+    border-radius: 50%;
+    line-height: 37px;
+    transition: all .5s ease-in-out; }
+  .top:hover i {
+    background-color: #ff8b38;
+    color: #fff; }
+
 /* Nav bar */
 .navbar {
   border-radius: 0;
   color: white;
   font-weight: 500; }
+  .navbar a {
+    cursor: pointer; }
 
 .scrolled {
   background-color: rgba(0, 0, 0, 0.5);
@@ -454,3 +474,27 @@ footer {
   footer p {
     padding: 0;
     margin: 0; }
+
+/* Small Screen */
+@media screen and (max-width: 767px) {
+  .text-center-xs {
+    text-align: center; }
+  header {
+    height: 175vh; }
+    header .lead:after {
+      margin-left: auto;
+      margin-right: auto; }
+    header button {
+      display: block;
+      margin: 25px auto; }
+  #tabs .tab-switch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    #tabs .tab-switch li {
+      width: 33%; }
+  #tabs .tabs-content button {
+    display: block;
+    margin: 20px auto; }
+  #pricing .price-pro {
+    margin-top: 15px; } }
