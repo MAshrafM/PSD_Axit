@@ -1,5 +1,31 @@
 /* common */
 $main-color : #ff8b38;
+$back-color: #f5f5f5;
+
+@mixin bullet-text{
+  h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    &:after{
+      content: '';
+      display: block;
+      width: 75px;
+      height: 2px;
+      background-color: $main-color;
+      margin: 25px auto;
+    }
+  }
+  
+  .lead{
+    font-size: 14px;
+    color: #a9aaac;
+    margin-bottom: 75px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1.3px;
+    font-style: italic; 
+  }
+}
 
 @mixin placeholder {
   &::-webkit-input-placeholder {@content}
@@ -32,6 +58,7 @@ body{
   font-weight: 400;
   font-family: "Raleway", sans-serif;
 }
+
 /* Nav bar */
 .navbar{
   border-radius: 0;
@@ -204,7 +231,7 @@ header{
 /* Tabs Section */
 #tabs{
   padding: 100px 0;
-  background-color: #f5f5f5;
+  background-color: $back-color;
   .tab-switch{
     li{
       background-color: #333;
@@ -309,7 +336,7 @@ header{
 }
 /* Secondary Sub list */
 #sublist-sec{
-  background-color: #f5f5f5;
+  background-color: $back-color;
   
   .sub-image{
     margin-top: 0;
@@ -327,29 +354,7 @@ header{
 /* Ad Section */
 #ad{
   padding: 50px 0;
-  h2{
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 42px;
-    &:after{
-      content: '';
-      display: block;
-      width: 75px;
-      height: 2px;
-      background-color: $main-color;
-      margin: 25px auto;
-    }
-  }
-  
-  .lead{
-    font-size: 14px;
-    color: #a9aaac;
-    margin-bottom: 75px;
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 1.3px;
-    font-style: italic;
-    
-  }
+  @include bullet-text;
   
   .icon{
     text-align:center;
@@ -382,30 +387,8 @@ header{
 /* Pricing */
 #pricing{
   padding: 75px 0;
-  background-color: #f5f5f5;
-  h2{
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 42px;
-    &:after{
-      content: '';
-      display: block;
-      width: 75px;
-      height: 2px;
-      background-color: $main-color;
-      margin: 25px auto;
-    }
-  }
-  
-  .lead{
-    font-size: 14px;
-    color: #a9aaac;
-    margin-bottom: 125px;
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 1.3px;
-    font-style: italic;
-    
-  }
+  background-color: $back-color;
+  @include bullet-text;
   
   .price-box{
     background-color: #333;
@@ -415,7 +398,7 @@ header{
       margin: 0;
       font-family: "Open Sans", sans-serif;
       font-weight: 600;
-      border-bottom: 1px solid #f5f5f5;
+      border-bottom: 1px solid $back-color;
     }
     
     .price{
@@ -451,7 +434,7 @@ header{
       
       li{
         padding: 10px;
-        border-bottom: 1px solid #f5f5f5;
+        border-bottom: 1px solid $back-color;
         color: #999;
       }
     }
@@ -464,34 +447,12 @@ header{
 /* Testimonials */
 #testimonials{
   padding: 75px 0;
-  h2{
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 42px;
-    &:after{
-      content: '';
-      display: block;
-      width: 75px;
-      height: 2px;
-      background-color: $main-color;
-      margin: 25px auto;
-    }
-  }
-  
-  .lead{
-    font-size: 14px;
-    color: #a9aaac;
-    margin-bottom: 75px;
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 1.3px;
-    font-style: italic;
-    
-  }
+  @include bullet-text;
   
   .testmonial{
     width: 90%;
     padding: 25px 15px;
-    background-color: #f5f5f5;
+    background-color: $back-color;
     color: #8e8f93;
     border-radius: 5px;
     position: relative;
@@ -502,7 +463,7 @@ header{
       height: 0;
       border-style: solid;
       border-width: 15px 15px 15px 15px;
-      border-color: #f5f5f5 transparent transparent transparent;
+      border-color: $back-color transparent transparent transparent;
       position: absolute;
       bottom: -30px;
       left: 35px;
@@ -546,26 +507,12 @@ header{
     height: 100%;
     background-color: rgba(0, 0, 0, .6);
   }
-  h2{
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 42px;
-    &:after{
-      content: '';
-      display: block;
-      width: 75px;
-      height: 2px;
-      background-color: #fff;
-      margin: 25px auto;
-    }
-  }
   
-  .lead{
-    font-size: 14px;
-    margin-bottom: 50px;
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 1.3px;
-    font-style: italic;
+  @include bullet-text;
+  h2{
+    &:after{
+      background-color: #fff;
+    }
   }
   
   .btn-stylish{
@@ -581,35 +528,9 @@ header{
 /* Contacts */
 #contacts{
   padding: 75px 0;
-  h2{
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 42px;
-    &:after{
-      content: '';
-      display: block;
-      width: 75px;
-      height: 2px;
-      background-color: $main-color;
-      margin: 25px auto;
-    }
-  }
-  
-  .lead{
-    font-size: 14px;
-    color: #a9aaac;
-    margin-bottom: 75px;
-    font-family: "Open Sans", sans-serif;
-    letter-spacing: 1.3px;
-    font-style: italic;
-    
-  }
+  @include bullet-text;
   
   .btn-main{
-    margin: 10px auto;
-    padding: 10px 20px;
-    border-radius: 3px;
-    font-weight: bold;
     &:hover{
       color: #fff;
     }

@@ -275,7 +275,7 @@ header {
   #pricing .lead {
     font-size: 14px;
     color: #a9aaac;
-    margin-bottom: 125px;
+    margin-bottom: 75px;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 1.3px;
     font-style: italic; }
@@ -392,14 +392,17 @@ header {
       display: block;
       width: 75px;
       height: 2px;
-      background-color: #fff;
+      background-color: #ff8b38;
       margin: 25px auto; }
   #stylish .lead {
     font-size: 14px;
-    margin-bottom: 50px;
+    color: #a9aaac;
+    margin-bottom: 75px;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 1.3px;
     font-style: italic; }
+  #stylish h2:after {
+    background-color: #fff; }
   #stylish .btn-stylish {
     margin: 5px auto;
     display: inline-block;
@@ -428,13 +431,8 @@ header {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 1.3px;
     font-style: italic; }
-  #contacts .btn-main {
-    margin: 10px auto;
-    padding: 10px 20px;
-    border-radius: 3px;
-    font-weight: bold; }
-    #contacts .btn-main:hover {
-      color: #fff; }
+  #contacts .btn-main:hover {
+    color: #fff; }
   #contacts input[type="text"], #contacts input[type="email"], #contacts textarea {
     margin-bottom: 10px;
     border: none;
